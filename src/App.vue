@@ -18,7 +18,7 @@
 
     <h2>Lista en la derecha</h2>
       <ul>
-        <li v-for="item in requiredChannels">
+        <li v-for="item in requiredChannels" v-bind:key="item.key">
           {{item.label}}
         </li>
       </ul>
